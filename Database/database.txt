@@ -1,0 +1,47 @@
+create  database newproject1;
+use newproject1;
+create table user(Name varchar(15),Password varchar(15),role varchar(10),score int);
+create table c(id int ,question varchar(60),op1 varchar(60),op2 varchar(60),op3 varchar(60),op4 varchar(60),answer varchar(60));
+create table cpp(id int ,question varchar(60),op1 varchar(60),op2 varchar(60),op3 varchar(60),op4 varchar(60),answer varchar(60));
+create table html(id int ,question varchar(60),op1 varchar(60),op2 varchar(60),op3 varchar(60),op4 varchar(60),answer varchar(60));
+create table java(id int ,question varchar(60),op1 varchar(60),op2 varchar(60),op3 varchar(60),op4 varchar(60),answer varchar(60));
+create table oops(id int ,question varchar(60),op1 varchar(60),op2 varchar(60),op3 varchar(60),op4 varchar(60),answer varchar(60));
+create table  highscore(score int);
+insert into cpp(1,' C++ language is a ___.','A.Object Oriented Language','B.Procedural Oriented Language','C.Structural Oriented Language','D.	None of the above','A.Object Oriented Language');
+Insert into cpp values('2','C++ follows ___.','A.Top-Down Design approach','B.Bottom-Up Design approach','C.Both of the above','D.None of the above.','B.Bottom-Up Design approach')
+Insert into cpp values('3',' C++ is a ___.','A.High-level language','B.Medium level language   ','C.Low-level language','D.None of the above',' B.Medium level language')
+insert into cpp values('4','The sizeof() is a?','A.Unary Operator    ','B.Binary Operator','C.Ternary Operator','D.None of the above',' A.Unary Operator')
+Insert into cpp values('5',' An array occupies memory space in?','A.Contiguous manner',' B.Fragmented manner','C.Linked List','D.None','A.Contiguous manner')
+
+select * from cpp;
+Insert into c values('1',' C language was developed by ___.','A.Dennis Rechard ','B.Dennis M. Ritchie ','C.Bjarne Stroustrup','D.Anders Hejlsberg','B.Dennis M. Ritchie ')
+Insert into c values('2','  C   is   a _.','A.Low level language   ','B.High level language','C.Medium level language','D.None of the above ','C.Medium level language')
+Insert into c values('3','The C source file is processed by the ___.','A.Interpreter  ','B.Compiler ',' C.Both Interpreter and Compiler','D.Assembler ','B.Compiler ')
+Insert into c values('4','. Which are the fundamental data types in C?','A.char    ','B.int','C.float','D.All of the above','D.All of the above')
+Insert into c values('5',' How many keywords are there in C language?','A.32 ','B.33 ','C.64 ','D.18 ','A.32 ')
+
+select * from c;
+Insert into java values('1','What makes the Java platform independent?','A.Advanced programming language ','B.It uses bytecode for execution',' C.Class compilation ','D.All of these ','B.It uses bytecode for execution')
+Insert into java values('2',' What are the types of memory allocated in java?','A.Heap memory   ',' B.Stack memory','C.Both A and B','D.None of these','C.Both A and B')
+Insert into java values('3',' What is the entry point of a program in Java?','A.main() method ','B.The first line of code  ','C.Last line of code','D.main class ','A.main() method ')
+Insert into java values('4','. Which keyword is used for exception handling?','A.exep ',' B.excepHand',' C.throw','D.All of these ',' C.throw')
+Insert into java values('5',' Object in java are ___.','A.Classes ','B.References ','C.Iterators  ','D.None of these','B.References ')
+select * from java;
+
+
+Insert into html values('1',' HTML headings are defined with the --- tags.','A.<head1> to <head6> ','B.<p1> to <p6> ','C.<h1> to <h6> ','D.<h1> to <h3> ','C.<h1> to <h6> ')
+Insert into html values('2',' Why "href" attribute is used with <a> tag?','A.To define title text ','B.To define reference of a document ','C.To define destination URL ','D.All of the above ','C.To define destination URL ')
+Insert into html values('3',' Which attribute specifies the path to the image?','A.href ','B.link ','C.src ','D.All of the above ','C.src ')
+Insert into html values('4',' Which tag specifies an inline frame?','A.<frame> ','B.<iframe>','C.<inlineframe> ',' D.<frames>','B.<iframe>')
+Insert into html values('5','Which tag is used to display a submit button?','A.<input type="submit"> ','B.<input type="checkbox">','C.<input type="text"> ','D.<input type="radio"> ','A.<input type="submit"> ')
+
+
+select * from html;
+Insert into oops values('1','Objects are the variables of the type ____?','A.String ','B.Boolean ','C.Class ','D.All data types can be included ','C.Class ')
+Insert into oops values('2',' What is the most striking feature of class?','A.Data encapsulation ','B.Collection of objects of similar type ','C.Inheritance ','D.All of the above ','A.Data encapsulation ')
+
+Insert into oops values('3','Total access specifiers in OOPS for C++ are?      ','A.1','B.2','C.3','D.4','C.3')
+Insert into oops values('4','Virtual function should be ---_.      ','A.private','B.public','C.default','D.protected','B.public')
+Insert into oops values('5','Which of the following is not an oops concept?','A.Compilation','B.Inheritance','C,polymorphism','D.Encapsulation','A.Compilation')
+select * from oops;
+
